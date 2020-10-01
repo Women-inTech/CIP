@@ -1,0 +1,13 @@
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.exe
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.deps.json
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.runtimeconfig.json
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.runtimeconfig.dev.json
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.dll
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\bin\Debug\netcoreapp3.1\CIP.pdb
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.csprojAssemblyReference.cache
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.AssemblyInfoInputs.cache
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.AssemblyInfo.cs
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.csproj.CoreCompileInputs.cache
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.dll
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.pdb
+C:\Users\Ana\Documents\KAL_projects\CIP\CIP\obj\Debug\netcoreapp3.1\CIP.genruntimeconfig.cache
