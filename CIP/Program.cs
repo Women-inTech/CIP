@@ -53,10 +53,10 @@ namespace CIP
             return temp - suma;
         }
 
-        static void Main(string[] args)
-        {
-            List<int> a = new List<int>{ 4, 2, 1, 3 };
-            Console.WriteLine(find2(a));
-        }
+        //static void Main(string[] args)
+        //{
+        //    List<int> a = new List<int>{ 4, 2, 1, 3 };
+        //    Console.WriteLine(find2(a));
+        //}
     }
 }
