@@ -59,10 +59,7 @@ namespace CIP
             }
 
             return Merge(MergeSort(a), MergeSort(b));
-
-
-
-            
+       
 
 
 
@@ -113,27 +110,27 @@ namespace CIP
         }
 
 
-        static public void Main(string[] args)
-        {
-            int[] a1 = {3, 2, 5, 7, 8, 4};
-            int[] b1 = { 0, 1, 6, 10 };
+        //static public void Main(string[] args)
+        //{
+        //    int[] a1 = {3, 2, 5, 7, 6, 0, 8, 4};
+        //    int[] b1 = { 0, 1, 6, 10 };
 
-            int[] x = MergeSort(a1);
+        //    int[] x = MergeSort(a1);
 
-            foreach(int c in x)
-            {
-                Console.Write(c + " , ");
-            }
+        //    foreach(int c in x)
+        //    {
+        //        Console.Write(c + " , ");
+        //    }
 
 
-            Console.WriteLine("\n"+ FindKth(a1, 3));
+        //    Console.WriteLine("\n"+ FindKth(a1, 3));
            
-            //Console.WriteLine(IsMatch("ab31z", "ab31z"));
-            //Console.WriteLine(IsMatch("ab31z", "ab#1"));
+        //    //Console.WriteLine(IsMatch("ab31z", "ab31z"));
+        //    //Console.WriteLine(IsMatch("ab31z", "ab#1"));
 
-            //Console.WriteLine(IsMatch("ab31z", "ab*1#"));
+        //    //Console.WriteLine(IsMatch("ab31z", "ab*1#"));
 
 
-        }
+        //}
     }
 }

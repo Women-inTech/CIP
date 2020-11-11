@@ -40,6 +40,8 @@ namespace CIP
                Console.WriteLine("-1");
         }
 
+
+
         /// <summary>
         /// 
         /// Write a program to sort an array of 0's,1's and 2's in ascending order.
@@ -143,12 +145,91 @@ namespace CIP
             }
         }
 
+        /// <summary>
+        /// 4.	Given an unsorted array of integers, find a subarray which adds to a given number. 
+        /// If there are more than one subarrays with sum as the given number, print any of them.
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="sum"></param>
+        static public void FindSubarray(int[] a, int sum)
+        {
+            int sumTemp = 0;
+
+            for(int i=0; i < a.Length-1; i++)
+            {
+                sumTemp = 0;
+                for (int j = i; j < a.Length; j++)
+                {
+                    sumTemp += a[j];
+
+                    if (sumTemp == sum)
+                    {
+                        Console.WriteLine("Pos: {0}, {1}", i, j);
+                        return;
+                    }
+                        
+                }
+            }
+
+            Console.WriteLine("No subarray founded");
+
+        }
+
+        public static void subArraySum(int[] arr, int n, int sum)
+        {
+            //cur_sum to keep track of cummulative sum till that point  
+            int cur_sum = 0;
+            int start = 0;
+            int end = -1;
+            Dictionary<int, int> hashMap = new Dictionary<int, int>();
+
+            for (int i = 0; i < n; i++)
+            {
+                cur_sum = cur_sum + arr[i];
+                //check whether cur_sum - sum = 0, if 0 it means  
+                //the sub array is starting from index 0- so stop  
+                if (cur_sum - sum == 0)
+                {
+                    start = 0;
+                    end = i;
+                    break;
+                }
+                //if hashMap already has the value, means we already   
+                // have subarray with the sum - so stop  
+                if (hashMap.ContainsKey(cur_sum - sum))
+                {
+                    Console.WriteLine(cur_sum + "****");
+
+                    start = hashMap[cur_sum - sum] + 1;
+                    end = i;
+                    break;
+                }
+                //if value is not present then add to hashmap  
+                hashMap[cur_sum] = i;
+
+            }
+            // if end is -1 : means we have reached end without the sum  
+            if (end == -1)
+            {
+                Console.WriteLine("No subarray with given sum exists");
+            }
+            else
+            {
+                Console.WriteLine("Sum found between indexes " + start + " to " + end);
+            }
+
+        }
+
         //0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2
 
-        //static public void Main(string[] args)
-        //{
-        //    int[] z = { 0, 1, 2, 2, 2, 1, 1, 0, 0, 1, 1, 2, 0 };
+        static public void Main(string[] args)
+        {
+            int[] z = { 1, 4, 20, 3, 10, 5 };
 
+            //FindSubarray(z, 20);
+            subArraySum(z, 6, 13);
+
+        }
         //    SortZerosAndOnes(z);
 
         //    //int[] a = { 1, 4, 0, 0, 3, 10, 5 };
