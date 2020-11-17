@@ -222,14 +222,14 @@ namespace CIP
 
         //0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 2
 
-        static public void Main(string[] args)
-        {
-            int[] z = { 1, 4, 20, 3, 10, 5 };
+        //static public void Main(string[] args)
+        //{
+        //    int[] z = { 1, 4, 20, 3, 10, 5 };
 
-            //FindSubarray(z, 20);
-            subArraySum(z, 6, 13);
+        //    //FindSubarray(z, 20);
+        //    subArraySum(z, 6, 13);
 
-        }
+        //}
         //    SortZerosAndOnes(z);
 
         //    //int[] a = { 1, 4, 0, 0, 3, 10, 5 };
